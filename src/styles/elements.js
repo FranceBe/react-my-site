@@ -12,4 +12,9 @@ export const elements = {
         disabled_background_color: palette.pink_lightest,
         disabled_text_color: palette.grey_light,
     },
+    menu: {
+        background_color: palette.pink_lightest,
+        default_height: '150px',
+
+    },
 };
