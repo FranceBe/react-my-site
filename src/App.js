@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import GlobalStyle from '../src/style';
 
-import Menu from './components/Menu';
 import About from './containers/About';
+import HomePage from "./containers/HomePage";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <React.Fragment>
           <GlobalStyle />
           <Router>
-            <Route path='/' exact render={() => <Menu />} />
+            <Route path='/' exact render={() => <HomePage />} />
             <Route path='/about' render={() => <About />} />
           </Router>
         </React.Fragment>

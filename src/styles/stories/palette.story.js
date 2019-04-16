@@ -18,6 +18,7 @@ const ColorContainer = styled.div`
   justify-content: center;
   width: 200px;
   padding: 10px;
+  text-align: center;
 `;
 const Color = styled.div`
   display: flex;
@@ -25,13 +26,23 @@ const Color = styled.div`
   height: 100px;
   width: 100px;
   border: 1px solid grey;
-  margin-right: 10px;
+  margin-right: 20px;
 `;
 
+const namesOfColors = Object.keys(palette);
+
 const arrayOfColors = Object.values(palette);
-const myPalette = arrayOfColors.map(color => {
-    return (<Color color={color} key={`color-${color}`} />);
+const myPalette = arrayOfColors.map((color, i) => {
+
+    return (
+        <div>
+            {namesOfColors[i]}
+            <Color color={color} key={`color-${color}`} />
+        </div>
+    );
 });
+
+
 
 storiesOf('Colors', module)
     .add('Palette', () => (

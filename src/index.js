@@ -2,15 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import App from './App'
-import About from './containers/About'
 import './index.css'
 
-const rootEl = document.getElementById('root')
+const rootEl = document.getElementById('root');
 
 ReactDOM.render(
   <App />,
   rootEl
-)
+);
 
 if (module.hot) {
   module.hot.accept('./App', () => {
