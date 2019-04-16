@@ -28,7 +28,6 @@
   ],
   "devDependencies": {
     "@babel/core": "7.4.3",
-    "@storybook/react": "5.0.8",
-    "babel-loader": "8.0.5"
+    "@storybook/react": "5.0.8"
   }
 }

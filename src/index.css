@@ -1,9 +1,24 @@
+@font-face {
+  font-family: Enriqueta;
+  src: url('/styles/fonts/Fira_Sans/FiraSans-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: Enriqueta;
+  src: url('/styles/fonts/Fira_Sans/FiraSans-Bold.ttf') format('ttf');
+}
+@font-face {
+  font-family: Enriqueta;
+  src: url('/styles/fonts/Fira_Sans/FiraSans-Italic.ttf') format('ttf');
+}
+@font-face {
+  font-family: Enriqueta;
+  src: url('/styles/fonts/Fira_Sans/FiraSans-Medium.ttf') format('ttf');
+}
+
 body {
   margin: 5%;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Enriqueta', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

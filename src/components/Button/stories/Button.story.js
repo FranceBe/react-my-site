@@ -3,6 +3,13 @@ import { storiesOf } from '@storybook/react';
 import Button from '../';
 
 storiesOf('Button', module)
-    .add('with text', () => (
-        <Button>Hello Button</Button>
+    .add('Default', () => (
+      <Button> Button </Button>
+    ))
+    .add('disabled', () => (
+        <Button
+            disabled
+        >
+            Disabled
+        </Button>
     ));
